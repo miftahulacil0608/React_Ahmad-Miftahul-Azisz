@@ -1,4 +1,5 @@
 **Tentang GIT dan bagaimana cara kerjanya**
+
 Git adalah sistem kontrol versi yang dikembangkan oleh Linus Torvalds pada tahun 2005. Ini adalah alat yang digunakan oleh para pengembang perangkat lunak untuk mengelola perubahan dalam kode sumber mereka. Berikut adalah beberapa poin singkat tentang Git. Git dikembangkan oleh Linus Torvalds untuk mengatasi beberapa masalah yang dimiliki sistem kontrol versi sebelumnya, seperti Subversion. Tujuan utama Git adalah memberikan sistem yang cepat, efisien, dan mendukung pengembangan yang terdistribusi. 
   Cara Kerja:
   *Repository (Repo): Git menyimpan data dalam format yang disebut "repository". Repository ini dapat berada di mesin lokal atau dapat dihosting di platform seperti GitHub, GitLab, atau Bitbucket.
@@ -7,12 +8,14 @@ Git adalah sistem kontrol versi yang dikembangkan oleh Linus Torvalds pada tahun
   *Distribusi: Git mendukung pengembangan yang terdistribusi, yang berarti setiap pengembang memiliki salinan penuh dari repositori dan dapat bekerja secara independen tanpa koneksi internet.
 
  **Cara instal/setting up Github**
+ 
  Alterra Academy menggunakan platform Github sebagai Repository online. Berikut cara mengatur Github ke dalam windows 11.
    1. Instal Git:Unduh dan instal Git untuk Windows dari situs resmi Git.
    2. Buka Git Bash: Setelah instalasi selesai, buka Git Bash. Ini akan menjadi antarmuka baris perintah Git.
    3. Konfigurasi Nama dan Email: Ketik perintah berikut untuk mengonfigurasi nama pengguna: git config --global user.name "Nama Anda"Copy code, git config --global user.email "email@example.com"
 
   **Cara penggunaan Github**
+  
   Penjelasan ini mengambil contoh penggunaan GitHub dalam pengembangan proyek landing page:
   1. Buat Repository di GitHub:
        *Buka akun GitHub Anda dan buat repository baru untuk proyek landing page.
