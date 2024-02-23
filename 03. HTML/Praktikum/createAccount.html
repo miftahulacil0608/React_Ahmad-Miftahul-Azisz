@@ -20,7 +20,7 @@
             <br>
             <label for="product-category">Product category :</label>
             <br>
-            <select name="product-category-list" id="product-category-list">
+            <select name="product-category-list" id="product-category-list" required>
                 <option value="item 1">Item 1</option>
                 <option value="item 2">Item 2</option>
                 <option value="item 3">Item 3</option>
@@ -28,7 +28,7 @@
             <label for="product-freshness">Product Freshness :</label>
             <br>
             <div class="product-freshness-option one">
-                <input type="radio" id="radio-option" name="radio-option" value="Brand New">
+                <input type="radio" id="radio-option" name="radio-option" value="Brand New" required>
                 <label for="radio-option">Brand New</label>
                 <br>
             </div>
@@ -43,12 +43,12 @@
                 <br>
             </div>
             <label for="uploud-file">Image of Product </label>
-            <input type="file" name="file" id="uploud-file">
+            <input type="file" name="file" id="uploud-file" required>
             <br>
             <label for="addictional-description">Addictional Description</label>
             <br>
-            <textarea name="addictional-description-input" id="addictional-description-input" cols="45"
-                rows="10"></textarea>
+            <textarea name="addictional-description-input" id="addictional-description-input" cols="45" rows="10"
+                required></textarea>
             <br>
             <label for="label-price">Product price :</label>
             <br>
