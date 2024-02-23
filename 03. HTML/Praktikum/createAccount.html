@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tugas HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="create-product">
+        <h1 class="create-product-title">Create Product</h1>
+        <h2 class="detail-product-title">Detail Product</h2>
+        <form>
+            <label for="product-name">Product name :</label>
+            <br>
+            <input type="text" id="product-name" name="product-name" minlength="6" maxlength="50" required>
+            <br>
+            <label for="product-category">Product category :</label>
+            <br>
+            <select name="product-category-list" id="product-category-list">
+                <option value="item 1">Item 1</option>
+                <option value="item 2">Item 2</option>
+                <option value="item 3">Item 3</option>
+            </select>
+            <label for="product-freshness">Product Freshness :</label>
+            <br>
+            <div class="product-freshness-option one">
+                <input type="radio" id="radio-option" name="radio-option" value="Brand New">
+                <label for="radio-option">Brand New</label>
+                <br>
+            </div>
+            <div class="product-freshness-option two">
+                <input type="radio" id="radio-option" name="radio-option" value="Brand New">
+                <label for="radio-option">Second Hank</label>
+                <br>
+            </div>
+            <div class="product-freshness-option three">
+                <input type="radio" id="radio-option" name="radio-option" value="Brand New">
+                <label for="radio-option">Refurbished</label>
+                <br>
+            </div>
+            <label for="uploud-file">Image of Product </label>
+            <input type="file" name="file" id="uploud-file">
+            <br>
+            <label for="addictional-description">Addictional Description</label>
+            <br>
+            <textarea name="addictional-description-input" id="addictional-description-input" cols="45"
+                rows="10"></textarea>
+            <br>
+            <label for="label-price">Product price :</label>
+            <br>
+            <input type="number" placeholder="$ 100" required>
+            <br>
+            <input type="submit" placeholder="Submit">
+
+
+
+        </form>
+
+
+    </main>
+
+
+</body>
+
+</html>
