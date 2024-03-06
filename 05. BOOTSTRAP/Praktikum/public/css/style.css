@@ -555,6 +555,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -565,10 +569,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
 }
 
 .block{
@@ -803,11 +803,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-\[13px\]{
   font-size: 13px;
 }
@@ -820,11 +815,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-8xl{
-  font-size: 6rem;
-  line-height: 1;
 }
 
 .font-bold{
