@@ -1,0 +1,289 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+:root {
+  --font-jost: "Jost", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --primary-color: rgba(55, 81, 126, 1);
+  --button-main-color: rgba(71, 183, 228, 1);
+  --secondary-color: rgba(255, 255, 255, 1);
+  --third-color: rgba(68, 68, 68, 1);
+  --fourth-color: rgba(94, 94, 94, 1);
+  --fifth-color: rgba(119, 119, 119, 1);
+}
+
+header {
+  height: 60px;
+}
+
+/* Main */
+.landingpage-content-header {
+  padding-top: 10%;
+  padding-bottom: 5%;
+
+  background-color: var(--primary-color);
+}
+.jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+  width: 90%;
+}
+.jumbotron .left {
+  h1 {
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-style: bold;
+  }
+  p {
+    font-size: clamp(14px, 2vw, 24px);
+    font-weight: 500;
+
+    opacity: 0.6;
+  }
+  .button-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 48px;
+  }
+
+  .button-header:not(:hover) {
+    .button:nth-child(1) {
+      background-color: var(--button-main-color);
+    }
+  }
+
+  .button {
+    display: inline-block;
+    padding: 12px 28px;
+    width: 147px;
+
+    color: var(--secondary-color);
+    text-align: center;
+
+    border-radius: 25px;
+    background-color: transparent;
+
+    &:focus,
+    &:hover {
+      background-color: var(--button-main-color);
+    }
+  }
+
+  color: var(--secondary-color);
+  font-family: var(--font-jost);
+}
+.jumbotron .right {
+  img {
+    width: 100%;
+    max-width: 637px;
+  }
+}
+
+.landingpage-content-joinournewsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+  background-color: #f3f5fa;
+  text-align: center;
+}
+
+.landingpage-content-joinournewsletter h2 {
+  font-family: var(--font-jost);
+  color: var(--primary-color);
+}
+.landingpage-content-joinournewsletter p {
+  font-family: var(--font-open-sans);
+  color: var(--third-color);
+  width: 70%;
+}
+
+.landingpage-content-joinournewsletter-form {
+  position: relative;
+  width: 70%;
+}
+
+.landingpage-content-joinournewsletter-form input#input-newsletter {
+  width: 100%;
+  height: 41.11px;
+  padding-left: 20px;
+  background-color: var(--secondary-color);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: 0px 6px rgba(0, 0, 0, 0.06);
+  outline: none;
+  &:focus {
+    border: 1px solid transparent;
+  }
+}
+
+.landingpage-content-joinournewsletter-form input.btn-subscribe {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  width: clamp(90px, 10vw, 113px);
+  border: 0;
+
+  text-align: center;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: var(--button-main-color);
+  padding-block: 12px;
+  cursor: pointer;
+}
+/* End Main */
+
+/* About company */
+.landingpage-content-aboutcompany .list-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 10px;
+  width: 90%;
+}
+
+.landingpage-content-aboutcompany .list-content .content {
+  flex-basis: 23%;
+  min-width: 220px;
+  &:nth-child(4) {
+    max-width: 290px;
+  }
+}
+.landingpage-content-aboutcompany .list-content .title {
+  color: var(--primary-color);
+  font-family: var(--font-jost);
+}
+.landingpage-content-aboutcompany .list-content ul li {
+  padding-block: 11px;
+  font-family: var(--font-open-sans);
+  font-size: 14px;
+  color: var(--fourth-color);
+
+  &:hover {
+    a {
+      color: var(--primary-color);
+      font-size: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+.landingpage-content-aboutcompany .list-content .one {
+  font-family: var(--font-jost);
+  .item {
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:nth-child(n of .mark) {
+      padding-left: 10px;
+    }
+
+    .our-contact {
+      margin-top: 30px;
+      strong {
+        font-weight: 700;
+      }
+    }
+    color: var(--fourth-color);
+  }
+}
+.landingpage-content-aboutcompany .list-content .four {
+  p {
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+    color: var(--third-color);
+  }
+  ul {
+    padding-left: 0;
+  }
+  ul li {
+    display: inline-block;
+    padding: 0;
+    margin-inline: 2px;
+  }
+  ul > li > a {
+    font-size: 18px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background-color: var(--button-main-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+  }
+}
+
+/* End about company */
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 88%;
+  padding-block: 3%;
+  flex-wrap: wrap;
+  color: var(--secondary-color);
+  font-family: var(--font-open-sans);
+}
+
+.footer-content .left {
+  font-size: 14px;
+}
+.footer-content .right {
+  font-size: 13px;
+  span {
+    color: var(--button-main-color);
+  }
+}
+/* End footer */
+
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    flex-direction: column;
+  }
+  .jumbotron .left {
+    order: 2;
+  }
+  .jumbotron .right {
+    width: 80%;
+    order: 1;
+  }
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
