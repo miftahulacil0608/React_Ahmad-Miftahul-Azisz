@@ -1,4 +1,4 @@
-**JavaSCRIPT**
+# JavaSCRIPT
 
 JavaScript adalah bahasa pemrograman yang sering digunakan untuk membuat halaman web menjadi lebih interaktif dan dinamis. Seiring dengan HTML dan CSS, JavaScript adalah salah satu teknologi inti dalam pengembangan web modern. Bahasa pemrograman ini dapat dijalankan di sisi klien (client-side) di dalam browser web, yang memungkinkan manipulasi elemen-elemen HTML dan CSS serta interaksi dengan pengguna.
 
