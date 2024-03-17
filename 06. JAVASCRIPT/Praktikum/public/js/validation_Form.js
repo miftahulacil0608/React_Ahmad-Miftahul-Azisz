@@ -78,4 +78,5 @@ function productNameValidation() {
 
 function blankInput(input) {
   return `The ${input} field must be filled in`;
+  
 }
