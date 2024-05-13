@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create Product</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body class="font-roboto">
+    <header class="flex justify-between items-center  p-4 bg-white border-b-2 border-gray-400">
+        <h1 class="shrink-0 font-medium text-black">Simple header</h1>
+        <nav class="flex gap- shrink">
+            <a href="#"
+                class=" inline-block py-2 px-4 rounded font-medium text-blue-500 max-[520px]:hidden hover:bg-bs-blue hover:text-white ">Home</a>
+            <a href="#"
+                class=" inline-block py-2 px-4 rounded font-medium text-blue-500 max-[520px]:hidden hover:bg-bs-blue hover:text-white">Features</a>
+            <a href="#"
+                class=" inline-block py-2 px-4 rounded font-medium text-blue-500 max-[520px]:hidden hover:bg-bs-blue hover:text-white">Pricing</a>
+            <a href="#"
+                class=" inline-block py-2 px-4 rounded font-medium text-blue-500 max-[520px]:hidden hover:bg-bs-blue hover:text-white">FAQs</a>
+            <a href="#"
+                class=" inline-block py-2 px-4 rounded font-medium text-blue-500 max-[520px]:hidden hover:bg-bs-blue hover:text-white">About</a>
+            <a href="#" class=" hidden max-[520px]:inline-block"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="create-product">
+            <section
+                class="title-product flex flex-col gap-4 items-center pt-10 text-for-font-black  sm:w-11/12 sm:mx-auto">
+                <img src="../images/bs-logo.png" alt="bs logo">
+                <h2 class=" font-medium text-3xl">Create Product</h2>
+                <p class=" font-light text-xl text-center">Below is an example form built entirely with Bootsthap’s form
+                    conthols. Each required form group has a validation state
+                    that can be thiggered by attempting to submit the form without completing it.</p>
+            </section>
+
+            <section class="form-product mt-8 ">
+                <form id="productForm" class="flex flex-col items-start gap-y-7 mx-auto pl-6 py-10 sm:w-3/4">
+                    <h1 class=" font-medium text-2xl text-for-font-black">Detail Product</h1>
+                    <div class="product-name w-full">
+                        <label for="Prodcut-name" class="block font-normal mb-2">Product name</label>
+                        <input type="text" id="productName"
+                            class=" block w-3/12 pl-2 min-w-44 h-8 rounded-md bg-white border border-slate-400 shadow-lg appearance-none focus: outline-none focus:ring-1 ring-blue-500">
+                        <span id="productNameErrorMassage" class=" text-red-600 text-sm"></span>
+                    </div>
+                    <div class="product-category w-full">
+                        <label for="prodcut-category" class="block font-normal mb-2">Product Category</label>
+                        <select name="prodcut-category" id="productCategory" required
+                            class=" block w-3/12 pl-2 min-w-44 h-8 rounded-md bg-white border border-slate-400 shadow-lg focus: outline-none focus:ring-1 ring-blue-500">
+                            <option value="">Choose..</option>
+                            <option value="prodcut-1">Product 1</option>
+                            <option value="prodcut-2">Product 2</option>
+                            <option value="prodcut-3">Product 3</option>
+                        </select>
+                    </div>
+                    <div class="image-product w-full">
+                        <label for="image-product" class="block font-normal mb-2">Image of Product</label>
+                        <input type="file" id="imageProduct"
+                            class=" block w-3/12 min-w-[202px] h-8 rounded-md bg-white border border-slate-400 shadow-lg text-center text-[13px] ring-1 ring-blue-500 focus: outline-none max-[520px]:w-[202px] file:mr-2 file:py-1.5 file:px-2.5 file:border-0 file:text-[13px] file:font-semibold file:bg-bs-blue file:text-white">
+                    </div>
+                    <div class="product-freshness w-full">
+                        <label class="block font-normal mb-2">Product Freshness</label>
+
+                        <div class="brand-new flex justify-start items-center gap-2">
+                            <input type="radio" id="brandNew" name="product-freshness" value="brand" class=" size-4"
+                                required>
+                            <label for="brand-new">Brand New</label><br>
+                        </div>
+                        <div class="second-hand flex justify-start items-center gap-2">
+                            <input type="radio" id="secondHand" name="product-freshness" value="second-hand"
+                                class=" size-4">
+                            <label for="second-hand">Second Hand</label><br>
+                        </div>
+                        <div class="refurbished flex justify-start items-center gap-2">
+                            <input type="radio" id="refurbished" name="product-freshness" value="refurbished"
+                                class=" size-4">
+                            <label for="refurbished">Refurbished</label><br>
+                        </div>
+                    </div>
+                    <div class="additional-description w-full">
+                        <label for="additional-description" class="block font-normal mb-2">Additional
+                            Description</label>
+                        <textarea name="additional-description" id="additional-description" cols="30" rows="10"
+                            class="block w-full bg-white border border-slate-400 shadow-lg rounded-lg">
+
+                        </textarea>
+                    </div>
+
+                    <div class="product-price w-full">
+                        <label for="product-price" class="block font-normal mb-2">Product Price</label>
+                        <input type="number" id="productPrice"
+                            class=" peer block w-full pl-2 min-w-44 h-8 rounded-md bg-white border border-slate-400 shadow-lg appearance-none focus: outline-none focus:ring-1 ring-blue-500 placeholder:pl-4"
+                            placeholder="$   1">
+                    </div>
+
+                    <input type="submit"
+                        class="mx-auto w-4/5 py-3 cursor-pointer bg-bs-blue  text-white font-semibold  rounded-md border border-slate-400 shadow-lg sm:py-5 sm:text-2xl">
+                </form>
+            </section>
+        </article>
+        <article class="list-product pl-[20px] ">
+            <h1 class=" text-center font-medium text-3xl text-for-font-black mb-6">List Product</h1>
+            <table id="productTable" class="table-auto">
+                <thead>
+                    <tr class="divide-x-[16px] divide-transparent text-left">
+                        <th class="text-left py-[6px] pl-[4px]">No</th>
+                        <th class="py-[6px]">Product Name</th>
+                        <th class="py-[6px]">Product Category</th>
+                        <th class="py-[6px]">Image of Product</th>
+                        <th class="py-[6px]">Product Freshness</th>
+                        <th class="py-[6px]">Additional Description</th>
+                        <th class="py-[6px]">Product Price</th>
+                    </tr>
+                </thead>
+                <tbody class=" [&>*:nth-child(even)]:bg-gray-100 [&>*:nth-child(odd)]:bg-gray-300">
+                    <!-- Data Statik -->
+                    <tr class="row-one divide-x-[16px] divide-transparent">
+                        <td>1,001</td>
+                        <td>Lorem</td>
+                        <td>ipsum</td>
+                        <td>dolor</td>
+                        <td>Brand new</td>
+                        <td>adipiscing</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <input id="inputSearch" type="search" placeholder="Search by Product Name"
+                class=" mt-3 p-[6px] border border-slate-400 shadow-sm rounded-lg sm:w-[20%] outline-none focus:ring-1 ring-bs-blue "
+                required>
+            <div class="button mt-3">
+                <button id="deleteButton"
+                    class="p-3 py-2 bg-bs-blue text-white text-sm rounded-md hover:ring-1 hover:ring-bs-blue">Deletion</button>
+                <button id="searchButton"
+                    class="p-3 py-2 text-bs-blue text-sm rounded-md hover:ring-1 hover:ring-bs-blue">Search</button>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../js/validation_Form.js"></script>
+
+</body>
+
+</html>
