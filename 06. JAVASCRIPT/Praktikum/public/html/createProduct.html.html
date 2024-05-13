@@ -39,17 +39,17 @@
             </section>
 
             <section class="form-product mt-8 ">
-                <form id="productForm" action="" class="flex flex-col items-start gap-y-7 mx-auto pl-6 py-10 sm:w-3/4">
+                <form id="productForm" class="flex flex-col items-start gap-y-7 mx-auto pl-6 py-10 sm:w-3/4">
                     <h1 class=" font-medium text-2xl text-for-font-black">Detail Product</h1>
                     <div class="product-name w-full">
                         <label for="Prodcut-name" class="block font-normal mb-2">Product name</label>
-                        <input type="text" id="productName" 
-                            class=" block w-3/12 pl-2 min-w-44 h-8 rounded-md bg-white border border-slate-400 shadow-lg appearance-none focus: outline-none focus:ring-1 ring-blue-500" >
-                            <span id="productNameErrorMassage" class=" text-red-600 text-sm"></span>
+                        <input type="text" id="productName"
+                            class=" block w-3/12 pl-2 min-w-44 h-8 rounded-md bg-white border border-slate-400 shadow-lg appearance-none focus: outline-none focus:ring-1 ring-blue-500">
+                        <span id="productNameErrorMassage" class=" text-red-600 text-sm"></span>
                     </div>
                     <div class="product-category w-full">
                         <label for="prodcut-category" class="block font-normal mb-2">Product Category</label>
-                        <select name="prodcut-category" id="productCategory required"
+                        <select name="prodcut-category" id="productCategory" required
                             class=" block w-3/12 pl-2 min-w-44 h-8 rounded-md bg-white border border-slate-400 shadow-lg focus: outline-none focus:ring-1 ring-blue-500">
                             <option value="">Choose..</option>
                             <option value="prodcut-1">Product 1</option>
@@ -64,20 +64,23 @@
                     </div>
                     <div class="product-freshness w-full">
                         <label class="block font-normal mb-2">Product Freshness</label>
-                        
+
                         <div class="brand-new flex justify-start items-center gap-2">
-                        <input type="radio" id="brandNew" name="product-freshness" value="brand" class=" size-4" required>
-                        <label for="brand-new">Brand New</label><br>
+                            <input type="radio" id="brandNew" name="product-freshness" value="brand" class=" size-4"
+                                required>
+                            <label for="brand-new">Brand New</label><br>
                         </div>
                         <div class="second-hand flex justify-start items-center gap-2">
-                            <input type="radio" id="secondHand" name="product-freshness" value="second-hand" class=" size-4">
+                            <input type="radio" id="secondHand" name="product-freshness" value="second-hand"
+                                class=" size-4">
                             <label for="second-hand">Second Hand</label><br>
                         </div>
                         <div class="refurbished flex justify-start items-center gap-2">
-                            <input type="radio" id="refurbished" name="product-freshness" value="refurbished" class=" size-4">
+                            <input type="radio" id="refurbished" name="product-freshness" value="refurbished"
+                                class=" size-4">
                             <label for="refurbished">Refurbished</label><br>
                         </div>
-                    </div >
+                    </div>
                     <div class="additional-description w-full">
                         <label for="additional-description" class="block font-normal mb-2">Additional
                             Description</label>
@@ -89,9 +92,9 @@
 
                     <div class="product-price w-full">
                         <label for="product-price" class="block font-normal mb-2">Product Price</label>
-                        <input  type="number" id="productPrice"
+                        <input type="number" id="productPrice"
                             class=" peer block w-full pl-2 min-w-44 h-8 rounded-md bg-white border border-slate-400 shadow-lg appearance-none focus: outline-none focus:ring-1 ring-blue-500 placeholder:pl-4"
-                            placeholder="$   1" >
+                            placeholder="$   1">
                     </div>
 
                     <input type="submit"
@@ -101,63 +104,41 @@
         </article>
         <article class="list-product pl-[20px] ">
             <h1 class=" text-center font-medium text-3xl text-for-font-black mb-6">List Product</h1>
-            <table class="table-auto">
-                <tr class="divide-x-[16px] divide-transparent text-left">
-                    <th class="text-left py-[6px] pl-[4px]">No</th>
-                    <th class="py-[6px]">Product Name</th>
-                    <th class="py-[6px]">Product Category</th>
-                    <th class="py-[6px]">Image of Product</th>
-                    <th class="py-[6px]">Product Freshness</th>
-                    <th class="py-[6px]">Additional Description</th>
-                    <th class="py-[6px]">Product Price</th>
-                </tr>
-
+            <table id="productTable" class="table-auto">
+                <thead>
+                    <tr class="divide-x-[16px] divide-transparent text-left">
+                        <th class="text-left py-[6px] pl-[4px]">No</th>
+                        <th class="py-[6px]">Product Name</th>
+                        <th class="py-[6px]">Product Category</th>
+                        <th class="py-[6px]">Image of Product</th>
+                        <th class="py-[6px]">Product Freshness</th>
+                        <th class="py-[6px]">Additional Description</th>
+                        <th class="py-[6px]">Product Price</th>
+                    </tr>
+                </thead>
                 <tbody class=" [&>*:nth-child(even)]:bg-gray-100 [&>*:nth-child(odd)]:bg-gray-300">
+                    <!-- Data Statik -->
                     <tr class="row-one divide-x-[16px] divide-transparent">
-                        <td class="py-[6px]">1,001</td>
-                        <td class="py-[6px]">Lorem</td>
-                        <td class="py-[6px]">ipsum</td>
-                        <td class="py-[6px]">dolor</td>
-                        <td class="py-[6px]">Brand new</td>
-                        <td class="py-[6px]">adipiscing</td>
-                        <td class="py-[6px]">1</td>
-                    </tr>
-                    <tr class="row-two divide-x-[16px] divide-transparent">
-                        <td class="py-[6px]">1,001</td>
-                        <td class="py-[6px]">Lorem</td>
-                        <td class="py-[6px]">ipsum</td>
-                        <td class="py-[6px]">dolor</td>
-                        <td class="py-[6px]">Brand new</td>
-                        <td class="py-[6px]">adipiscing</td>
-                        <td class="py-[6px]">1</td>
-                    </tr>
-                    <tr class="row-three divide-x-[16px] divide-transparent">
-                        <td class="py-[6px]">1,001</td>
-                        <td class="py-[6px]">Lorem</td>
-                        <td class="py-[6px]">ipsum</td>
-                        <td class="py-[6px]">dolor</td>
-                        <td class="py-[6px]">Brand new</td>
-                        <td class="py-[6px]">adipiscing</td>
-                        <td class="py-[6px]">1</td>
-                    </tr>
-                    <tr class="row-four divide-x-[16px] divide-transparent">
-                        <td class="py-[6px]">1,001</td>
-                        <td class="py-[6px]">Lorem</td>
-                        <td class="py-[6px]">ipsum</td>
-                        <td class="py-[6px]">dolor</td>
-                        <td class="py-[6px]">Brand new</td>
-                        <td class="py-[6px]">adipiscing</td>
-                        <td class="py-[6px]">1</td>
+                        <td>1,001</td>
+                        <td>Lorem</td>
+                        <td>ipsum</td>
+                        <td>dolor</td>
+                        <td>Brand new</td>
+                        <td>adipiscing</td>
+                        <td>1</td>
                     </tr>
                 </tbody>
             </table>
-            <input type="search" placeholder="Search by Product Name" class=" mt-3 p-[6px] border border-slate-400 shadow-sm rounded-lg sm:w-[20%] outline-none focus:ring-1 ring-bs-blue " required>
+
+            <input id="inputSearch" type="search" placeholder="Search by Product Name"
+                class=" mt-3 p-[6px] border border-slate-400 shadow-sm rounded-lg sm:w-[20%] outline-none focus:ring-1 ring-bs-blue "
+                required>
             <div class="button mt-3">
-                <button class="p-3 py-2 bg-bs-blue text-white text-sm rounded-md hover:ring-1 hover:ring-bs-blue" >Deletion</button>
-                <button class="p-3 py-2 text-bs-blue text-sm rounded-md hover:ring-1 hover:ring-bs-blue">Search</button>
+                <button id="deleteButton"
+                    class="p-3 py-2 bg-bs-blue text-white text-sm rounded-md hover:ring-1 hover:ring-bs-blue">Deletion</button>
+                <button id="searchButton"
+                    class="p-3 py-2 text-bs-blue text-sm rounded-md hover:ring-1 hover:ring-bs-blue">Search</button>
             </div>
-
-
         </article>
     </main>
 
@@ -166,6 +147,7 @@
     </footer>
 
     <script src="../js/validation_Form.js"></script>
+
 </body>
 
 </html>
