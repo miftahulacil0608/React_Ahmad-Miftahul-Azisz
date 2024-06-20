@@ -2,7 +2,7 @@
 
 ## Berikut adalah poin-poin utama yang dapat dipelajari dari materi Dasar React:
 
-### Definisi React
+### 1. Definisi React
 React adalah perpustakaan (library) JavaScript yang digunakan untuk membangun antarmuka pengguna (UI) yang interaktif dan responsif, baik untuk aplikasi web maupun mobile. Dalam arsitektur MVC (Model-View-Controller), React JS berfungsi pada layer View. Beberapa contoh perpustakaan dan kerangka kerja (framework) lain yang digunakan untuk pembuatan UI termasuk jQuery, Angular, Vue, Next, dan lainnya.
 
 ### Langkah-langkah instalasi React:
