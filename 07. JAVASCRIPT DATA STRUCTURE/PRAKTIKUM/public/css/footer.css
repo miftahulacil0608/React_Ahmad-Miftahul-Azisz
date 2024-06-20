@@ -1,0 +1,488 @@
+:root {
+  --primary-color: #fd853a;
+  --secondary-color: #344054;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --font-urbanist: "Urbanist", sans-serif;
+  --font-awesome: "Font Awesome 6 Free", sans-serif;
+}
+
+footer {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  border-radius: 24px 24px 0 0;
+  margin-top: 20px;
+}
+footer .container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+}
+
+.container.head-footer {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 3%;
+
+  .title {
+    flex: 1 1 auto;
+    font-size: clamp(32px, 4vw, 48px);
+  }
+  .button-hire {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 60px;
+  }
+}
+
+.container.main-footer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-block: 4%;
+  border-block: 2px solid #475467;
+
+  .main-content {
+    ul {
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .one {
+    flex: 1 1 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+      width: 100%;
+    }
+    ul li {
+      display: inline-block;
+      margin-inline-end: 5px;
+      text-align: center;
+    }
+    .title-content-one {
+      display: flex;
+      gap: 10px;
+      img {
+        width: 47px;
+        height: 47px;
+      }
+      h3 {
+        line-height: 50%;
+      }
+    }
+  }
+  .two {
+    flex: 1 1 auto;
+    .title-content {
+      color: var(--primary-color);
+    }
+  }
+  .three {
+    flex: 1 1 auto;
+    .title-content {
+      color: var(--primary-color);
+    }
+  }
+  .four {
+    flex: 1 1 auto;
+    .title-content {
+      color: var(--primary-color);
+    }
+    .form-email-control {
+      ::placeholder {
+        color: var(--black-color);
+        font-weight: 700;
+      }
+      .input-email {
+        padding: 15px;
+
+        outline: none;
+        border: 0;
+        border-radius: 14px 0 0 14px;
+      }
+      .button-submit {
+        border-radius: 0 14px 14px 0;
+        padding: 15px;
+        outline: none;
+        border: 0;
+
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        .fas.fa-paper-plane {
+          rotate: 60deg;
+        }
+      }
+    }
+  }
+}
+.container.copyright-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* End container number five */
+
+@media screen and (max-width: 480px) {
+  .navigation-description-container-two
+    .navigation-description-container-two-porto_or_hire {
+    width: 60%;
+    bottom: 5px;
+    gap: 5px;
+    background-color: transparent;
+    border: 0px;
+    text-align: center;
+  }
+  .navigation-description-container-two-my_experience {
+    display: none;
+  }
+  .navigation-description-container-two-my_description {
+    display: none;
+  }
+
+  .my-service-header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .my-service-header-description {
+    width: 100%;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+  }
+  .rectangle-my-service {
+    width: 100%;
+    justify-content: center;
+  }
+  .my-service-card {
+    width: 90%;
+  }
+  .my-work-experience-details-row {
+    padding-left: 15%;
+  }
+  .my-work-experience-details-row::after {
+    left: 6%;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+  }
+  .item-content-left {
+    width: 100%;
+  }
+  .item-content-right {
+    width: 100%;
+  }
+  .item-content-left::after {
+    left: 6%;
+  }
+
+  .container-why_hire_mee-row.content-why_hire_mee-left {
+    display: none;
+  }
+  .container-why_hire_mee-row.content-why_hire_mee-right {
+    width: 100%;
+  }
+  .content-why_hire_mee-right .hire_mee {
+    padding: 4%;
+    width: 35%;
+  }
+
+  /* Container number four */
+  .my_portofolio-header-title {
+    width: 100%;
+  }
+  .my_portofolio-description-content.item-content-list_experience {
+    width: 100%;
+  }
+  .my_portofolio-description-content.item-content-about_portfolio {
+    width: 100%;
+  }
+  .item-content-images {
+    justify-content: flex-start;
+    align-items: start;
+
+    .item-position-left,
+    .item-position-right {
+      width: 100%;
+    }
+    .container-lirante {
+      bottom: -110px;
+    }
+  }
+
+  .container-number-five .title-header {
+    width: 100%;
+  }
+
+  .container-number-five .description {
+    width: 100%;
+  }
+  /* End Container number four */
+}
+
+@media screen and (max-width: 480px) {
+  .navigation-description-container-two
+    .navigation-description-container-two-porto_or_hire {
+    width: 60%;
+    bottom: 5px;
+    gap: 5px;
+    background-color: transparent;
+    border: 0px;
+    text-align: center;
+  }
+  .navigation-description-container-two-my_experience {
+    display: none;
+  }
+  .navigation-description-container-two-my_description {
+    display: none;
+  }
+
+  .my-service-header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .my-service-header-description {
+    width: 100%;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+  }
+  .rectangle-my-service {
+    width: 100%;
+    justify-content: center;
+  }
+  .my-service-card {
+    width: 90%;
+  }
+  .my-work-experience-details-row {
+    padding-left: 15%;
+  }
+  .my-work-experience-details-row::after {
+    left: 6%;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+  }
+  .item-content-left {
+    width: 100%;
+  }
+  .item-content-right {
+    width: 100%;
+  }
+  .item-content-left::after {
+    left: 6%;
+  }
+
+  .container-why_hire_mee-row.content-why_hire_mee-left {
+    display: none;
+  }
+  .container-why_hire_mee-row.content-why_hire_mee-right {
+    width: 100%;
+  }
+  .content-why_hire_mee-right .hire_mee {
+    padding: 4%;
+    width: 35%;
+  }
+
+  /* Container number four */
+  .my_portofolio-header-title {
+    width: 100%;
+  }
+  .my_portofolio-description-content.item-content-list_experience {
+    width: 100%;
+  }
+  .my_portofolio-description-content.item-content-about_portfolio {
+    width: 100%;
+  }
+  .item-content-images {
+    justify-content: flex-start;
+    align-items: start;
+
+    .item-position-left,
+    .item-position-right {
+      width: 100%;
+    }
+    .container-lirante {
+      bottom: -110px;
+    }
+  }
+
+  .container-number-five .title-header {
+    width: 100%;
+  }
+
+  .container-number-five .description {
+    width: 100%;
+  }
+  /* End Container number four */
+}
+
+@media screen and (max-width: 780px) {
+  nav .topnavigation {
+    a:not(:nth-child(4)) {
+      display: none;
+      order: 4;
+    }
+    a:nth-child(4) {
+      flex: 1 1 auto;
+
+      &:hover {
+        .navigation-header-logo-profil::before,
+        .navigation-header-logo-profil::after {
+          left: 50px;
+        }
+      }
+    }
+
+    a.icon {
+      display: block;
+      flex: 0 1 120px;
+      padding: 0;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .topnavigation.responsive .icon {
+    position: absolute;
+    width: 120px;
+    padding: 0;
+    top: 30px;
+    right: 0;
+  }
+  .topnavigation.responsive {
+    position: relative;
+    display: block;
+    a:not(:last-child) {
+      display: block;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 844px) {
+  .my-service-header {
+    width: 97%;
+  }
+
+  .rectangle-my-service {
+    width: 100%;
+    justify-content: center;
+    gap: 3%;
+  }
+  .my-service-card {
+    width: 47%;
+    margin-bottom: 0px;
+  }
+  .my-service-card:nth-child(3) {
+    /* width: 97%; */
+    flex-basis: auto;
+    margin-bottom: 30px;
+  }
+
+  .my-work-experience-details-row {
+    padding-left: 10%;
+  }
+  .my-work-experience-details-row::after {
+    left: 5%;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+  .item-content-left {
+    width: 100%;
+  }
+  .item-content-right {
+    width: 100%;
+  }
+  .item-content-left::after {
+    left: 5%;
+  }
+  .content-why_hire_mee-right .hire_mee {
+    padding: 5%;
+    width: 40%;
+  }
+  .my_portofolio-description-content.item-content-list_experience {
+    width: 100%;
+  }
+  .my_portofolio-description-content.item-content-about_portfolio {
+    width: 100%;
+  }
+
+  /* Container number four */
+  .item-content-images {
+    justify-content: flex-start;
+    align-items: start;
+    .item-position-left,
+    .item-position-right {
+      width: 80%;
+    }
+    .container-lirante {
+      bottom: -35%;
+    }
+  }
+  /* End container number four */
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation-description-container-two-my_experience {
+    margin-right: 10px;
+    right: 0;
+    left: 0;
+  }
+  .navigation-description-container-two-my_description {
+    margin-left: 10px;
+    right: 0;
+    left: 0;
+  }
+
+  /* container four */
+  .item-content-about_portfolio {
+    width: 80%;
+  }
+  /* End Container number four */
+
+  .item-content-images {
+    justify-content: center;
+  }
+  .item-position-left,
+  .item-position-right {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .navigation-description-container-two
+    .navigation-description-container-two-my_description {
+    left: 0;
+    top: 35%;
+  }
+
+  .navigation-description-container-two
+    .navigation-description-container-two-my_experience {
+    right: 0;
+    top: 35%;
+  }
+
+  .item-position-left,
+  .item-position-right {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+  .container-lirante {
+    bottom: -30%;
+  }
+}
